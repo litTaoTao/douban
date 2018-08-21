@@ -1,0 +1,90 @@
+
+#app {
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 650px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+#app h1 {
+    font-size: 24px;
+    font-weight: normal;
+    box-sizing: border-box;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+    padding-left: 4%;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    text-align: left
+}
+
+#list .item {
+    text-decoration: none;
+    color: #9b9b9b;
+}
+.grid .item {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.grid {
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 660px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.grid .item .cover {
+    min-height: 87px;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid .ratio1_1, .grid .ratio3_4 {
+    position: relative;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+.grid .ratio3_4:before {
+    padding-top: 143%;
+}
+.grid .ratio1_1:before, .grid .ratio3_4:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+#list .item .img-show {
+    opacity: 1;
+}
+#list .item img {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+.grid .item img {
+    display: block;
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
